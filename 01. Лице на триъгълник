@@ -1,0 +1,23 @@
+using System;
+
+
+namespace _05112020
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           double osnova = double.Parse(Console.ReadLine());
+           double visochina = double.Parse(Console.ReadLine());
+            Console.WriteLine(s(osnova, visochina));
+
+;
+        }
+        static double s(double a, double b)
+        {
+            double lice = (a * b) / 2;
+            return lice;
+        }
+        
+    }
+}

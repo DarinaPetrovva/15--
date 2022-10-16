@@ -1,0 +1,28 @@
+using System;
+
+
+namespace _05112020
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double n = double.Parse(Console.ReadLine());
+            double pow = double.Parse(Console.ReadLine());
+            double n1 = npow(n, pow);
+            Console.WriteLine(n1);
+
+;
+        }
+        static double npow(double n, double pow)
+        {
+            double p = 1;
+            for (double i = 0; i < pow; i++)
+            {
+                p *= n;
+            }
+            return p;
+        }
+
+    }
+}

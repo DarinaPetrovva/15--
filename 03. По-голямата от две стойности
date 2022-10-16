@@ -1,0 +1,43 @@
+using System;
+
+namespace _05112020
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string type = Console.ReadLine();
+            if (type == "int")
+            {
+                int a = int.Parse(Console.ReadLine());
+                int b = int.Parse(Console.ReadLine());
+                Console.WriteLine(Max(a, b));
+            }
+            else if (type == "char")
+            {
+                char c = char.Parse(Console.ReadLine());
+                char d = char.Parse(Console.ReadLine());
+                Console.WriteLine(Max(c, d));
+            }
+            else if (type == "string")
+            {
+                string e = Console.ReadLine();
+                string f = Console.ReadLine();
+                Console.WriteLine(Max(e, f));
+            }
+        }
+        static int Max(int a, int b)
+        {
+            return Math.Max(a, b);
+        }
+        static char Max(char a, char b)
+        {
+            return (a > b) ? a : b;
+        }
+        static string Max(string a, string b)
+        {
+            return (a.CompareTo(b) > 0) ? a : b;
+        }
+
+    }
+}

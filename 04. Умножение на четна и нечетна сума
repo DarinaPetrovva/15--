@@ -1,0 +1,34 @@
+using System;
+
+class OddEvenSum
+{
+    static void Main()
+    {
+        int n =int.Parse(Console.ReadLine());
+        n = Math.Abs(n);
+        Console.WriteLine(EvenDigitsSum(n)*OddDigitsSum(n));
+      
+    }
+  static int EvenDigitsSum (int n)
+  {
+    int p = 0;
+    while(n>0)
+    {
+      int c = n%10;
+      if(c %2 == 0)p =p+c;
+      n = n/10;
+    }
+    return p;
+  }
+  static int OddDigitsSum(int n)
+  {
+    int p =0;
+    while(n>0)
+    {
+      int c = n%10;
+      if(c%2 == 1) p = p+c;
+      n =n/10;
+    }
+    return p;
+  }
+}
